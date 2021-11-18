@@ -23,7 +23,10 @@ let wantedToy = 2
 let budget = 25
 
 for (const toy of toys){
-    toy.price += 0.5
+    const toyPrice = toy.price / 100
+    const toyIncrease = toyPrice * 5
+    toy.price += toyIncrease 
+    console.log(toy.price)
 }
 
 for (const toy of toys){
@@ -38,3 +41,4 @@ for (toy of toys){
     }    
 }
 
+console.log(toys)
